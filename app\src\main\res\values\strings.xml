@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rokid Style Translate</string>
+
+    <!-- MainActivity -->
+    <string name="action_start">Start Listening</string>
+    <string name="action_stop">Stop</string>
+    <string name="action_settings">Settings</string>
+    <string name="status_listening">Status: Listening…</string>
+    <string name="status_stopped">Status: Stopped</string>
+    <string name="label_language_pair">Language pair: %1$s ↔ English</string>
+    <string name="main_hint">Audio only — no display required. Speak naturally; translation is spoken back through the glasses\' speakers.</string>
+    <string name="no_api_key_warning">Please set your Gemini API key in Settings first.</string>
+
+    <!-- Permissions -->
+    <string name="permission_denied_audio">Microphone permission is required for voice translation.</string>
+    <string name="permission_rationale_audio">This app needs microphone access to listen for speech and translate it in real time.</string>
+
+    <!-- SettingsActivity -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_api_key_label">Gemini API Key</string>
+    <string name="settings_api_key_hint">Paste your API key here</string>
+    <string name="settings_api_key_hint_detail">Get a free key at aistudio.google.com. The key is stored only on this device.</string>
+    <string name="settings_api_key_empty_warning">API key cannot be empty.</string>
+    <string name="settings_language_pair_label">Language Pair</string>
+    <string name="language_pair_es_en">Spanish ↔ English (es-ES)</string>
+    <string name="language_pair_it_en">Italian ↔ English (it-IT)</string>
+    <string name="settings_save">Save Settings</string>
+    <string name="settings_saved">Settings saved.</string>
+
+    <!-- Notification -->
+    <string name="notification_title">Rokid Translator</string>
+    <string name="notification_text">Translator listening…</string>
+    <string name="notification_channel_name">Translation Service</string>
+    <string name="notification_channel_desc">Shows while the voice translation service is active.</string>
+</resources>
