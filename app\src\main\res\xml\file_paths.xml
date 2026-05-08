@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  FileProvider paths — reserved for future use (e.g. sharing logs or audio
+  recordings).  Required by the manifest FileProvider declaration if added.
+-->
+<paths>
+    <files-path name="internal_files" path="." />
+    <cache-path name="cache_files" path="." />
+</paths>
