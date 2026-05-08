@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- API Key section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_api_key_label"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_api_key_hint_detail"
+            android:textSize="12sp"
+            android:alpha="0.7"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/settings_api_key_hint"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etApiKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/colorControlHighlight"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Language pair section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_language_pair_label"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="12dp" />
+
+        <RadioGroup
+            android:id="@+id/rgLanguagePair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbEsEn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/language_pair_es_en"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbItEn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/language_pair_it_en"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+        </RadioGroup>
+
+        <!-- Save button -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/settings_save"
+            android:textSize="16sp"
+            android:layout_marginTop="32dp" />
+
+    </LinearLayout>
+
+</ScrollView>
